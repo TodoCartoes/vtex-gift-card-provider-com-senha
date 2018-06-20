@@ -1,0 +1,65 @@
+body {
+	background-color: white;
+	font-family: 'Ubuntu';
+}
+
+textarea {
+	width: 100%;
+	height: 20vw;
+}
+
+.container {
+	margin:  auto;
+}
+
+.row {
+	padding-bottom: 3%;
+}
+
+#header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding-bottom: 3%; 
+	padding-top: 2%;
+	color: #4386fc;
+}
+
+#todo-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#todo-logo div {
+	padding-left: 2%;
+}
+
+#page-title {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 200%;
+}
+
+#btn {
+	background-color: #4386fc; 
+	width: 100%;
+	border: none;
+}
+
+#alert-box {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	tex-align: center;
+	color: #1ebc30;
+	background-color: #e5f9e7;
+	border: solid 1px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+#alert-msg {
+	padding: 2%;
+	font-weight: bold;
+}
