@@ -11,6 +11,22 @@
 		<link rel="stylesheet" href="css/skeleton.css">
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="icon" type="image/png" href="images/todo-200x200-transparente.png">
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="jsencrypt.min.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('div div div #btn').click(function() {
+					var encrypt = new JSEncrypt();
+
+					encrypt.setPublicKey($('div div div #pubkey').val());
+
+					var encrypted = encrypt.encrypt($('div div div #input').val());
+
+					$('div div div #result').val(encrypted);
+				});
+			});
+		</script>
 	</head>
 
 	<body>
@@ -28,7 +44,7 @@
 			<div class="row" id="public-key">
 				<div class="ten columns">
 					<label for="pubkey">Coloque sua chave pública aqui:</label><br/>
-					<textarea id="pubkey" rows="15" cols="65">-----BEGIN PUBLIC KEY-----
+					<textarea id="pubkey">-----BEGIN PUBLIC KEY-----
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqoASU91zU5Li1LIEvBE1
 eAociM8wFna4aT4y7inxvwvxML3dInVAr/jM/AOWOcrRIpJdH2R3ROLC4IX9Tui/
 f65RwNLxNd/waCvl1pw3FCzERHTdL2ZBBhdpxuWkb/r07pfkDA9J4GRNDnYEsevB
@@ -43,7 +59,7 @@ EwIDAQAB
 			<div class="row" id="message">
 				<div class="ten columns">
 					<label for="input">Digite sua mensagem aqui:</label><br/>
-					<textarea id="input" name="input" type="text" rows=4 cols=70>Isto é um teste!</textarea></br>
+					<textarea id="input" name="input" type="text">Isto é um teste!</textarea></br>
 				</div>
 			</div>
 
@@ -56,7 +72,7 @@ EwIDAQAB
 			<div class="row" id="result">
 				<div class="ten columns">
 					<label for="result">Envie o texto abaixo para a Todo Cartões para validar sua chave:</label><br/>
-					<textarea id="result" name="result" type="text" rows=4 cols=70></textarea><br/>
+					<textarea id="result" name="result" type="text"></textarea><br/>
 				</div>
 			</div>
 
