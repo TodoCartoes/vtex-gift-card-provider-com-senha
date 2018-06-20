@@ -8,6 +8,10 @@ textarea {
 	height: 20vw;
 }
 
+.row {
+	padding-bottom: 3%;
+}
+
 #header {
 	display: flex;
 	flex-wrap: wrap;
