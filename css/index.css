@@ -8,6 +8,10 @@ textarea {
 	height: 20vw;
 }
 
+.container {
+	margin:  auto;
+}
+
 .row {
 	padding-bottom: 3%;
 }
