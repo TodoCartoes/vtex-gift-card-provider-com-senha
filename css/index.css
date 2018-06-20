@@ -1,16 +1,18 @@
 body {
 	background-color: white;
+	font-family: 'Ubuntu';
 }
 
 textarea {
 	width: 100%;
 }
 
-.container {
-}
-
 #header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 	padding-bottom: 3%; 
+	color: #4386fc;
 }
 
 #todo-logo {
@@ -25,7 +27,6 @@ textarea {
 
 #page-title {
 	display: flex;
-	align-items: center;
 	justify-content: flex-end;
 }
 
