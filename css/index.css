@@ -48,7 +48,7 @@ textarea {
 }
 
 #alert-box {
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	tex-align: center;
