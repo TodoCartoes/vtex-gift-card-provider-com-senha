@@ -17,6 +17,7 @@ textarea {
 	flex-wrap: wrap;
 	align-items: center;
 	padding-bottom: 3%; 
+	padding-top: 2%;
 	color: #4386fc;
 }
 
@@ -33,6 +34,7 @@ textarea {
 #page-title {
 	display: flex;
 	justify-content: flex-end;
+	font-size: 2vw;
 }
 
 #btn {
@@ -41,3 +43,19 @@ textarea {
 	border: none;
 }
 
+#alert-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	tex-align: center;
+	color: #1ebc30;
+	background-color: #e5f9e7;
+	border: solid 1px;
+	border-radius: 3px;
+	width: 100%;
+}
+
+#alert-msg {
+	padding: 2%;
+	font-weight: bold;
+}
