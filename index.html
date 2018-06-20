@@ -1,36 +1,46 @@
-<!doctype html>
-<html>
-  <head>
-    <title>JavaScript RSA Encryption</title>
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <script src="jsencrypt.min.js"></script>
-    <!-- https://github.com/travist/jsencrypt/tree/master/src -->
-    <script type="text/javascript">
-      $(function() {
-        $('#testme').click(function() {
-          var encrypt = new JSEncrypt();
-          encrypt.setPublicKey($('#pubkey').val());
-          var encrypted = encrypt.encrypt($('#input').val());
-          $('#result').val(encrypted);
-        });
-      });
-    </script>
-  </head>
-  <body>
-    <label for="pubkey">Public Key</label><br/>
-    <textarea id="pubkey" rows="15" cols="65">-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqoASU91zU5Li1LIEvBE1
-eAociM8wFna4aT4y7inxvwvxML3dInVAr/jM/AOWOcrRIpJdH2R3ROLC4IX9Tui/
-f65RwNLxNd/waCvl1pw3FCzERHTdL2ZBBhdpxuWkb/r07pfkDA9J4GRNDnYEsevB
-FQw+tfK/e2S+kZh5VxH0SLjabaw7y+s9xYY4NXveSNd12dpbtI1xXa9EO4gVsyh8
-gNtWtjt1Z7ypSxba+Dyxd9TMBtJ4Ho4rBjFrRijPggTWNCto0eVXKZ3NjBaDYUmW
-drcBmx1tTjfcrUs+ZVi3KCp3ZTHyvcr3/A/mMZ6Id3e5og09U0lvjG3246ZzV2Jj
-EwIDAQAB
------END PUBLIC KEY-----</textarea><br/>
-    <label for="input">Text to encrypt:</label><br/>
-    <textarea id="input" name="input" type="text" rows=4 cols=70>This is a test!</textarea><br/>
-    <label for="result">Encrypted result:</label><br/>
-    <textarea id="result" name="result" type="text" rows=4 cols=70></textarea><br/>
-    <input id="testme" type="button" value="Test Me!!!" /><br/>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
 </html>
