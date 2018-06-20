@@ -1,0 +1,37 @@
+body {
+	background-color: white;
+}
+
+textarea {
+	width: 100%;
+}
+
+.container {
+}
+
+#header {
+	padding-bottom: 3%; 
+}
+
+#todo-logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#todo-logo div {
+	padding-left: 2%;
+}
+
+#page-title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#btn {
+	background-color: #4386fc; 
+	width: 100%;
+	border: none;
+}
+
