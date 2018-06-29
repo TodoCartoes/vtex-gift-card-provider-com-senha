@@ -15,7 +15,7 @@ O dado a ser enviado (RedemptionCode) para a Todo Cartões deve respeitar o segu
 ```
 NÚMERO_DO_CARTÃO.SENHA_ENCRIPTADA
 ```
-Onde o NÚMERO_DO_CARTÃO possui 16 dígitos e a SENHA_ENCRIPTADA possui 172 caracteres.
+Onde o NÚMERO_DO_CARTÃO possui 16 dígitos. No total o RedemptionCode deve possuir até 255 caracteres.
 
 ### Cadastro da Todo Cartões como Card Provider
 
@@ -69,6 +69,22 @@ Para realizar essa etapa os seguintes passos devem ser executados:
 
 * Obter com a Todo Cartões a chave pública necessária para encriptar o dado a ser transmitido.
 * Implementar a criptografia do dado no frontend com o uso da biblioteca JSEncrypt (conforme o exemplo apresentado).
+```
+// Você precisa inserir o jsencrypt no seu frontend
+// Aqui está o CDN: https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/2.3.1/jsencrypt.min.js
+// Ou você pode incluir o .min.js, que está neste repositório.
+
+// inicializa o jsencrypt
+var encrypt = new JSEncrypt();
+
+// localiza e atribui a chave pública
+var pub_key = $('#caminho_pub_key').val();
+encrypt.setPublicKey(pub_key);
+
+// encripta a senha baseando-se na chave pública.
+var senha_cartao = $('#caminho_senha_cartao').val();
+var encrypted = encrypt.encrypt(senha_cartao);
+```
 * Enviar o dado no formato definido anteriormente (RedemptionCode = NÚMERO_DO_CARTÃO.SENHA_ENCRIPTADA).
 
 Para maiores informações acesse a documentação da biblioteca [JSEncrypt](https://github.com/travist/jsencrypt).
