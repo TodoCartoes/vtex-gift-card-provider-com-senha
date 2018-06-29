@@ -51,6 +51,7 @@ curl --request GET \
   --header 'X-VTEX-API-AppToken: {{vtex_app_token}}'
 ```
 Para maiores informações sobre os requests a serem executados acesse essa [documentação](https://documenter.getpostman.com/view/2516022/RVfwjBPd).
+Para maiores informações sobre o appKey e o appToken da VTEX acesse esse [link](https://help.vtex.com/pt/tutorial/criar-appkey-e-apptoken-para-autenticar-integracoes).
 
 Para facilitar a execução dos passos acima é possível usar o Postman.
 Para maiores informações acesse a [página do Postman](https://www.getpostman.com/).
