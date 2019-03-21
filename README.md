@@ -32,12 +32,14 @@ curl --request PUT \
   --header 'X-VTEX-API-AppKey: {{vtex_app_key}}' \
   --header 'X-VTEX-API-AppToken: {{vtex_app_token}}' \
   --data '{
-    "serviceUrl": "https://gateway.todocartoes.com.br/vtex/api/v1",
+    "serviceUrl": "https://gateway.todocartoes.com.br/api/v1/{{name}}",
     "oauthProvider": "vtex",
     "preAuthEnabled": true,
     "cancelEnabled": true
 }'
 ```
+
+Importante ressaltar que a URL indicada pela chave `serviceUrl` está indicada como `https://gateway.todocartoes.com.br/api/v1/{{account_name}}`, onde `{{name}}` é uma string, sem espaços ou caracteres especiais. Este nome deve ser passado para TodoCartões, caso a criação do `GiftCardProvider` não tenha sido feita pela própria TodoCartões.
 
 * Verificar se a Todo foi cadastrada como GiftCardProvider.
 
