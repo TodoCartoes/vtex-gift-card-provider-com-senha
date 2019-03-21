@@ -39,7 +39,7 @@ curl --request PUT \
 }'
 ```
 
-Importante ressaltar que a URL indicada pela chave `serviceUrl` está indicada como `https://gateway.todocartoes.com.br/api/v1/{{account_name}}`, onde `{{name}}` é uma string, sem espaços ou caracteres especiais. Este nome deve ser passado para TodoCartões, caso a criação do `GiftCardProvider` não tenha sido feita pela própria TodoCartões.
+Importante ressaltar que a URL indicada pela chave `serviceUrl` está indicada como `https://gateway.todocartoes.com.br/api/v1/{{name}}`, onde `{{name}}` é uma string, sem espaços ou caracteres especiais. Este nome deve ser passado para TodoCartões, caso a criação do `GiftCardProvider` não tenha sido feita pela própria TodoCartões.
 
 * Verificar se a Todo foi cadastrada como GiftCardProvider.
 
