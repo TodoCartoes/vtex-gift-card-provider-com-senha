@@ -33,7 +33,7 @@ curl --request PUT \
   --data '{
     "serviceUrl": "https://gateway.todocartoes.com.br/api/v1/{{name}}",
     "oauthProvider": "vtex",
-    "preAuthEnabled": true,
+    "preAuthEnabled": false,
     "cancelEnabled": true
 }'
 ```
