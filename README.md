@@ -65,6 +65,8 @@ Para essa etapa, deve-se fazer o uso da biblioteca JSEncrypt. Esta estratégia p
 Esse repositório apresenta um exemplo do uso dessa biblioteca que está presente no arquivo [index.html](index.html).
 Esse exemplo pode ser acessado [aqui](https://todocartoes.github.io/cryptonita/).
 
+**IMPORTANTE:** a chave utilizada neste exemple não corresponde a usada nas intergrações reais. Para isso, é necessário solicitar a chave com o nosso time.
+
 Para realizar essa etapa os seguintes passos devem ser executados:
 
 * Obter com a Todo Cartões a chave pública necessária para encriptar o dado a ser transmitido.
