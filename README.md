@@ -3,7 +3,6 @@
 Este repositório tem como objetivo auxiliar na implementação da encriptação de mensagens enviadas na integração com a Todo Cartões.
 
 ## Processo para a integração
-
 Para realizar adequadamente essa integração as etapas a seguir devem ser seguidas:
 
 1. Cadastro da Todo Cartões como Card Provider.
@@ -15,7 +14,7 @@ O dado a ser enviado (RedemptionCode) para a Todo Cartões deve respeitar o segu
 ```
 NÚMERO_DO_CARTÃO.SENHA_ENCRIPTADA
 ```
-Onde o NÚMERO_DO_CARTÃO possui 16 dígitos. No total o RedemptionCode deve possuir até 255 caracteres.
+Onde o NÚMERO_DO_CARTÃO possui 16 dígitos. No total o RedemptionCode **pode possuir até** 255 caracteres.
 
 ### Cadastro da Todo Cartões como Card Provider
 
