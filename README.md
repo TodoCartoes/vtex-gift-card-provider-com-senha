@@ -98,10 +98,6 @@ Os códigos aqui apresentados possuem o propósito único de realizar testes.
 As implementações finais devem ser melhoradas e adequadas a cada caso de uso.
 Para maiores informações consulte a seção de referências.
 
-## Contribuindo
-
-Para contribuir com esse repositório siga o [Guia de contribuição](CONTRIBUITION_GUIDE.md).
-
 ## Notas finais
 
 Essa documentação foi feita para ser simples e direta.
