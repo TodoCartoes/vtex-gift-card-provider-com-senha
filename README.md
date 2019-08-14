@@ -1,4 +1,4 @@
-# Cryptonita
+# Implementação VTEX Gift Card Provider com Senha
 
 Este repositório tem como objetivo auxiliar na implementação da encriptação de mensagens enviadas na integração com a Todo Cartões.
 
