@@ -57,6 +57,15 @@ Para facilitar a execução dos passos acima é possível usar o Postman.
 Para maiores informações acesse a [página do Postman](https://www.getpostman.com/).
 
 Caso ainda ocorram dificuldades, entre em contato com a Todo.
+### Implementação frontend
+
+Para realizar a implementação, é necessário customizar o campo padrão da Vtex (Vale presente) que receberá o código da Todo Cartões no formato citado anteriormente. `NÚMERO_DO_CARTÃO.SENHA_ENCRIPTADA`
+
+Deve-se inserir campos para o numero do cartão e senha, onde os dados serão encryptados e inseridos no campo padrão da Vtex (Vale presente) para ser enviado.
+#### Sugestão de implementação
+* Ao acionar o select com a opção da Todo Cartões, ocultar o campo padrão da Vtex e deixar visível os campos customizados.
+
+* Adicionar um event listener nos inputs customizados para realizar a encryptação e inserir o resultado no campo padrão que está oculto.
 
 ### Encriptação do dado no momento de checkout na página web
 
