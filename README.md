@@ -63,7 +63,6 @@ Caso ainda ocorram dificuldades, entre em contato com a Todo.
 Para essa etapa, deve-se fazer o uso da biblioteca JSEncrypt. Esta estratégia pode ser utilizada em checkouts VTEX que não possuem um campo de senha a parte.
 
 Esse repositório apresenta um exemplo do uso dessa biblioteca que está presente no arquivo [index.html](index.html).
-Esse exemplo pode ser acessado [aqui](https://todocartoes.github.io/vtex-gift-card-provider-com-senha/).
 
 **IMPORTANTE:** a chave utilizada neste exemple não corresponde a usada nas intergrações reais. Para isso, é necessário solicitar a chave com o nosso time.
 
